@@ -21,14 +21,17 @@
                 <section class="entrada-texto" id="entrada">
                     <label for="text-para-decodificar" class="titulo-caixa-texto">Digite seu texto... </label>
                     <textarea class="caixa-texto" name="texto" id="text-para-codificar" wrap="" cols="40" rows="20" required></textarea>
+                    <div class="aviso">
+                        <p>⚠️Não são aceitos números, letras com acento,letras maiúsculas e caracteres especiais.</p>
+                    </div>
                     <div class="botoes">
                         <input type="button" 
                         value="Codificar" class="executar" id="codificar" >
-
                         <input type="button" value="Decodificar" class="executar" id="decodificar">
                     </div>
                 </section>
                 <img src="../src/imagens/detetive.png" alt="detetive com uma lupa" class="detetive">
+                <button id="limpa" class="executar">Limpar</button>
                 <section class="caixa-devolve-texto">
                     <label for="devolvendo-texto" class="titulo-caixa-texto-resultado"></label>
                     <textarea name="campo-devolve-texto" id="devolve-texto" class="devolvendo-texto" disabled cols="40" rows="25" placeholder="Aguardando texto..."></textarea>

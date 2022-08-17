@@ -26,8 +26,15 @@ main{
 .detetive{
     width: 15%;
     align-self: flex-start;
+    
+}
+.detetive:hover{
+    opacity: 0.70;
 }
 
+#limpa{
+    position: absolute;
+}
 
 .titulo-caixa-texto{
     font-family: 'DynaPuff', cursive;
@@ -52,14 +59,28 @@ textarea{
     height: 310px;
     font-size: 20px;
 }
+.aviso{
+    display: flex;
+    width: 400px;
+    justify-content: baseline;
+    padding: 2%;
+    margin-top: -5%;
+    position: absolute;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+}
+
+
 
 .botoes, .botao{
     display: flex;
     justify-content: space-around;
     padding: 2%;
 }
+
 .executar{
-    font-size: 20px;
+    font-size: 17px;
     font-family: 'DynaPuff', cursive;
     border: 3px dotted rgb(68, 34, 34);
     border-radius: 5%;
@@ -67,13 +88,16 @@ textarea{
     transition: 1s;
     padding: 10px;
     color: white;
-    width: 45%;
+    width: 130px;
+    height: 50px;
 }
 
 .executar:hover{
-    font-size: 21px;
+    font-size: 18px;
     background: rgb(177, 176, 176);
-
+    width: 130px;
+    height: 50px;
+    
 }
 .caixa-devolve-texto{
     align-self: flex-end;
