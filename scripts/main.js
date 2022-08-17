@@ -30,7 +30,6 @@ function codificarTexto(){
     
 }
 
-console.log(codificarTexto())
 function decodificarTexto(){
     entradaTexto = document.querySelector('#text-para-codificar').value;
     textoDecodificado = entradaTexto.replace(/enter/g, "e").replace(/imes/g, "i").replace(/ai/g, "a").replace(/ober/g, "o").replace(/ufat/g, "u");

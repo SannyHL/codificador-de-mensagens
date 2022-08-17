@@ -134,3 +134,16 @@ textarea{
     text-align:end;
     font-size: 20px;
 }
+
+footer{
+    background:rgb(41, 16, 16);
+    width: 100%;
+    
+
+}
+footer p{
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-family: cursive;
+}
