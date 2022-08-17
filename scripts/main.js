@@ -13,10 +13,10 @@ verifica.addEventListener('keypress', function(e){
     
 })
 function verificaLetraMinusculas(e){
-    let char = String.fromCharCode(e.keyCode);
+    let tecla = String.fromCharCode(e.keyCode);
 
     let analise = '[a-z]';
-    if(char.match(analise)){
+    if(tecla.match(analise)){
         return true;
     }
 }

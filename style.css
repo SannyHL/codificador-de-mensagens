@@ -71,8 +71,6 @@ textarea{
     text-align: center;
 }
 
-
-
 .botoes, .botao{
     display: flex;
     justify-content: space-around;
@@ -137,13 +135,161 @@ textarea{
 
 footer{
     background:rgb(41, 16, 16);
-    width: 100%;
-    
-
+    width: 100%; 
 }
 footer p{
     text-align: center;
     color: white;
     padding: 20px;
     font-family: cursive;
+}
+
+@media screen and (max-width: 360px) {
+    .cabecario{
+        background: rgb(41, 16, 16);
+        width: 100%;
+        height: 30%;
+        text-align: center;
+    }
+    .titulo{
+        font-family: 'Silkscreen', cursive;
+        font-size: 2em;
+        color: white;
+        text-decoration:underline;
+        padding-top: 5px;
+    }
+    main{
+        background: rgb(41, 16, 16);
+        width: 100%;
+        height: 600px;
+    }
+    .campo-caixas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        align-items:center;
+        padding: 10% 0 0 0 ;
+    }
+    .detetive{
+        width: 10%;
+        align-self: baseline;
+        top: 7%;
+        right: 9%;
+        position: absolute;
+        
+    }
+    .detetive:hover{
+        opacity: 0.70;
+    }
+    
+    #limpa{
+        position:absolute;
+        top: 47%;
+    }
+    
+    .titulo-caixa-texto{
+        font-family: 'DynaPuff', cursive;
+        display: block;
+        font-size: 9px;
+        line-height: 15px;
+        text-align: center;  
+        color: white;
+        margin-bottom: 0;
+        
+    }
+    textarea{
+        padding: 12px;
+    }
+    .caixa-texto{
+        border: 3px double rgb(68, 34, 34);
+        border-radius: 10%;
+        resize: none;
+        background: rgb(41, 16, 16);
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 200px;
+        height: 150px;
+        font-size: 9px;
+
+    }
+    .aviso{
+        display: none;
+    }
+    
+    .botoes, .botao{
+        display: flex;
+        justify-content: center;
+        padding: 2%;
+    }
+    
+    .executar{
+        font-size: 8px;
+        font-family: 'DynaPuff', cursive;
+        border: 3px dotted rgb(68, 34, 34);
+        border-radius: 5%;
+        background: rgb(41, 16, 16);
+        transition: 1s;
+        padding: 5px;
+        color: white;
+        width: 90px;
+        height: 30px;
+    }
+    
+    .executar:hover{
+        font-size: 9px;
+        background: rgb(177, 176, 176);
+        width: 90px;
+        height: 30px;
+        
+    }
+    .caixa-devolve-texto{
+        align-self: center;
+        padding: 10%;
+    }
+    .devolvendo-texto{
+        border: 5px dashed rgb(78, 45, 45);
+        border-radius: 10%;
+        resize: none;
+        background: rgb(68, 34, 34);
+        color: white;
+        font-weight: bold;
+        font-family:Arial, Helvetica, sans-serif;
+        text-align-last: center;
+        text-align: center;
+        width: 200px;
+        height: 150px;
+        font-size: 10px;
+        
+    }
+    
+    .devolvendo-texto:placeholder-shown{
+        width: 200px;
+        height: 150px;
+        font-size: 10px;
+        background: url(./src/imagens/lupa.png);
+        opacity: 0.6;
+        background-repeat: no-repeat;
+        background-size: 40%;
+        background-position-x:center;
+        background-position-y: center;
+        color: white;
+        font-weight: bold;
+        font-family:Arial, Helvetica, sans-serif;
+        text-align:end;
+        font-size: 20px;
+    }
+    
+    footer{
+        background:rgb(41, 16, 16);
+        width: 100%;
+        margin-top: 0%;
+    }
+    footer p{
+        text-align: center;
+        color: white;
+        padding: 12px;
+        font-size: 8px;
+        font-family: cursive;
+    }
 }
