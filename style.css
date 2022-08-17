@@ -1,0 +1,112 @@
+.cabecario{
+    background: rgb(41, 16, 16);
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+.titulo{
+    font-family: 'Silkscreen', cursive;
+    font-size: 5em;
+    color: white;
+    text-decoration:underline;
+    padding-top: 5px;
+}
+main{
+    background: rgb(41, 16, 16);
+    width: 100%;
+    height: 600px;
+}
+.campo-caixas{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items:center;
+    margin-top: -2%;
+}
+.detetive{
+    width: 15%;
+    align-self: flex-start;
+}
+
+
+.titulo-caixa-texto{
+    font-family: 'DynaPuff', cursive;
+    display: block;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;  
+    color: white;
+    margin-bottom: 5%;
+}
+textarea{
+    padding: 17px;
+}
+.caixa-texto{
+    border: 5px double rgb(68, 34, 34);
+    border-radius: 10%;
+    resize: none;
+    background: rgb(41, 16, 16);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 400px;
+    height: 310px;
+    font-size: 20px;
+}
+
+.botoes, .botao{
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+}
+.executar{
+    font-size: 20px;
+    font-family: 'DynaPuff', cursive;
+    border: 3px dotted rgb(68, 34, 34);
+    border-radius: 5%;
+    background: rgb(41, 16, 16);
+    transition: 1s;
+    padding: 10px;
+    color: white;
+    width: 45%;
+}
+
+.executar:hover{
+    font-size: 21px;
+    background: rgb(177, 176, 176);
+
+}
+.caixa-devolve-texto{
+    align-self: flex-end;
+}
+.devolvendo-texto{
+    border: 5px dashed rgb(78, 45, 45);
+    border-radius: 10%;
+    resize: none;
+    background: rgb(68, 34, 34);
+    color: white;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align-last: center;
+    text-align: center;
+    width: 400px;
+    height: 310px;
+    font-size: 20px;
+
+}
+
+.devolvendo-texto:placeholder-shown{
+    width: 400px;
+    height: 310px;
+    background: url(./src/imagens/lupa.png);
+    opacity: 0.6;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position-x:center;
+    background-position-y: center;
+    font-size: 17px;
+    color: white;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:end;
+    font-size: 20px;
+}

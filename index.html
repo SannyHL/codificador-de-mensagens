@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./reset.css">
+        <link rel="stylesheet" href="./style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
+        <title>Codificador</title>
+    </head>
+    <body>
+        <header>
+            <section class="cabecario">
+                <h1 class="titulo">CODIFICADOR🗝️</h1>
+            </section>
+        </header>
+        <main>
+            <form class="campo-caixas">
+                <section class="entrada-texto" id="entrada">
+                    <label for="text-para-decodificar" class="titulo-caixa-texto">Digite seu texto... </label>
+                    <textarea class="caixa-texto" name="texto" id="text-para-codificar" wrap="" cols="40" rows="20" required></textarea>
+                    <div class="botoes">
+                        <input type="button" 
+                        value="Codificar" class="executar" id="codificar" >
+
+                        <input type="button" value="Decodificar" class="executar" id="decodificar">
+                    </div>
+                </section>
+                <img src="../src/imagens/detetive.png" alt="detetive com uma lupa" class="detetive">
+                <section class="caixa-devolve-texto">
+                    <label for="devolvendo-texto" class="titulo-caixa-texto-resultado"></label>
+                    <textarea name="campo-devolve-texto" id="devolve-texto" class="devolvendo-texto" disabled cols="40" rows="25" placeholder="Aguardando texto..."></textarea>
+                    <div class="botao">
+                        <button id="copiar" class="executar">Copiar</button>
+                    </div>
+                </section>
+            </form>
+        </main>
+        <footer></footer>
+        <script src="./scripts/main.js"></script>
+    </body>
+</html>
